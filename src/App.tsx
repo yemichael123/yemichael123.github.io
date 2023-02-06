@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import logo from './logo.svg';
 import { Home } from './components/Home'
 import { NavigationBar } from './components/NavigationBar'
+import { Games } from './components/Games'
 // import './App.scss';
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <div className="App">
         <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
           <Routes>
-            <Route path="/" element={<><Home/><NavigationBar/></>} />
+            <Route path="/" element={<><Home/><NavigationBar/></>}>
+            </Route>
+            <Route path="/games/metroid" element={<Games/>} />
           </Routes>
       </BrowserRouter>
     </div>
