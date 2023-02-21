@@ -15,7 +15,7 @@ export const Home = () => {
                 <div id="stars"></div>
                 <Container className="text-center">
                     <h1 className="display-1">
-                        michael ye :)
+                        michael yeee :)
                     </h1>
                     <h1 className="display-1">
                         <Typist>

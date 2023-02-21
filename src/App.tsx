@@ -9,11 +9,11 @@ import { Games } from './components/Games'
 function App() {
   return (
     <div className="App">
-        <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
-            <Route path="/" element={<><Home/><NavigationBar/></>}>
+            <Route path="/" element={<><Games/><NavigationBar/></>}>
             </Route>
-            <Route path="/games/metroid" element={<Games/>} />
+            <Route path="games" element={<Games/>} />
           </Routes>
       </BrowserRouter>
     </div>
