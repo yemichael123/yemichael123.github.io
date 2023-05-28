@@ -15,6 +15,26 @@ export const Games = () => {
                 <div id="stars"></div>
                 <Container className="text-center">
                     <h1 className="display-1">
+                        Neon Hammer
+                    </h1>
+                    <iframe width="552" height="167" src="https://itch.io/embed/2021767"><a href="https://johgle.itch.io/neon-hammer">Neon Hammer by Hammer Studios</a></iframe>                    <h1 className="display-1">
+                        <div className="lead typist">
+                            Contribution: I worked on neon aesthetics, dialogue, text, obstacles, and map creation
+                        </div>
+                    </h1>
+                    <h1 className="display-1">
+                        <div className="lead typist">
+                            Technologies: C#, Unity
+                        </div>
+                    </h1>
+                    <h1 className="display-1">
+                        <div className="lead typist">
+                            by Hammer Studios
+                        </div>
+                    </h1>
+                </Container>
+                <Container className="text-center">
+                    <h1 className="display-1">
                         Frog Guy Who Can Control Time
                     </h1>
                     <iframe width="552" height="167" src="https://itch.io/embed/1937835"><a href="https://michye.itch.io/frog-guy-who-can-control-time">Frog Guy Who Can Control Time by michye</a></iframe>                    <h1 className="display-1">
