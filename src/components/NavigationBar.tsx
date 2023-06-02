@@ -3,11 +3,11 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Button } from 'semantic-ui-react';
+import { Button, Dropdown, Icon } from 'semantic-ui-react';
 
 export const NavigationBar = () => {
     return (
-      <Navbar className="px-3 fixed-top navbar-transparent" expand="lg">
+      <Navbar className="px-3 fixed-top navbar-transparent my-4" expand="lg">
         <Container fluid>
           <Nav></Nav>
           <Nav
@@ -15,9 +15,22 @@ export const NavigationBar = () => {
             style={{ alignItems: 'Right', }}
           >
             <Button.Group>
-              <Button inverted size="massive" onClick={() => {window.location.href = "/";}}>Home</Button>
-              <Button inverted size="massive" onClick={() => {window.location.href = "/";}}>Resume</Button>
-              <Button inverted size="massive" onClick={() => {window.location.href = "/";}}>Projects</Button>
+              <Button animated="vertical" inverted size="massive" onClick={() => {window.location.href = "/";}}>
+                <Button.Content visible>Home</Button.Content>
+                <Button.Content hidden><Icon name='home'/></Button.Content>
+              </Button>
+              <Button animated="vertical" inverted size="massive" onClick={() => {window.location.href = "/";}}>
+                <Button.Content visible>Projects</Button.Content>
+                <Button.Content hidden><Icon name='microchip'/></Button.Content>
+              </Button>
+              <Button animated="vertical" inverted size="massive" onClick={() => {window.location.href = "/";}}>
+                <Button.Content visible>Misc</Button.Content>
+                <Button.Content hidden><Icon name='folder'/></Button.Content>
+              </Button>
+              <Button animated="vertical" inverted size="massive" onClick={() => {window.location.href = "/";}}>
+                <Button.Content visible>Contact</Button.Content>
+                <Button.Content hidden><Icon name='phone'/></Button.Content>
+              </Button>
             </Button.Group>
             {/* <Nav.Link className="navigation" href="/">Home</Nav.Link>
             <Nav.Link className="navigation">Resume</Nav.Link>
